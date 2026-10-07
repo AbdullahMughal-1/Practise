@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.card{
+    background-color: #181818;
+    width: 90%;
+    max-width: 380px;
+    min-height: 600px;
+    border-radius: 14px;
+}
+
+.pic{
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    border-radius: 50%;
+
+}
+
+img{
+    height: 90px;
+    border-radius: 50%;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    flex-direction: column;
+    gap: 9px;
+    
+}
+
+.text .loc{
+
+color: #c5f82a;
+font-size: 14px;
+font: bold;
+}
+
+.text .job {
+    font-size: 16px;
+    padding-top: 20px;
+    color: #cfcdcd;
+}
+
+.links{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font: bolder;
+}
+
+.links button{
+    min-width: 80%;
+    height: 40px;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    background-color: #494949;
+    color: white;
+    
+    
+}
+
+button:hover{
+
+background-color: #c5f82a;
+color: #494949;
+
+
+}

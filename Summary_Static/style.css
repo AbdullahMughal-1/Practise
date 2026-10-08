@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  color: white;
+}
+
+body {
+  background-color: #ecf2ff;
+  color: rgb(68, 68, 68);
+}
+
+.section {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.outsidebox{
+    width: 30%;
+    min-height: 400px;
+    background-color: hsl(0, 0%, 99%);
+    display: flex;
+    border-radius: 15px;
+
+    
+   
+
+}
+
+.firstbox{
+    background: linear-gradient(180deg, #7857FF 0%, #2E13D8 100%);
+    width: 50%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.result{
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+.score{
+  font-size: 17px;
+text-align: center;
+width: 200px;
+margin-top: 10px;
+}
+
+.circle{
+  margin-top: 10px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle h1{
+  font-size: 50px;
+}
+
+
+
+.secondbox{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secondbox p{
+  margin-top: 23px;
+  margin-bottom: 20px;
+  text-align: start;
+  color: black;
+  font-weight: 600;
+}
+
+
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  width: 70%;  
+  gap: 10px;
+}
+
+.buttons button{
+  border: none;
+  outline: none;
+  height: 40px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  border-radius: 9px;
+
+
+}
+
+.conti{
+  width: 70%;
+  border: none;
+  margin-top: 40px;
+  height: 35px;
+}
+
+.reaction{
+  background-color: rgba(255, 0, 0, 0.123);
+  color: red;
+
+}
+.reaction span{
+  color: black;
+  font-weight: 500;
+}
+
+.memory{
+  background-color: rgba(255, 166, 0, 0.123);
+  color: orange;
+}
+
+.memory span{
+  color: black;
+  font-weight: 500;
+}
+
+.verbal{
+  background-color: hsla(166, 100%, 37%, 0.171);
+  color: hsl(166, 100%, 37%);
+}
+
+.verbal span{
+  color: black;
+  font-weight: 500;
+}
+
+.visual{
+  background-color: rgba(0, 0, 255, 0.123);
+  color: blue;
+}
+
+.visual span{
+  color: black;
+  font-weight: 500;
+}
+
+.conti {
+  color: black;
+  border-radius: 9px;
+  background-color: rgb(97, 97, 240);
+}
+
+/* Apply styles when screen width is 600px or less */
+@media (max-width: 1200px) {
+  .outsidebox {
+    flex-direction: column;
+    width: 60vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+  }
+.firstbox{
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.secondbox{
+  height: 50vh;
+  width:60vw ;
+}
+
+
+}

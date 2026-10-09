@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +14,70 @@ body{
 }
 
 .section{
-    width: 25vw;
-    height: 35vh;
-    background-color: aqua;
-    border-radius: 7px;
+    width: 45vw;
+    height: 55vh;
+  
+}
+
+.card{
+  background-color: aqua;
+    border-radius: 12px;
+    display: flex
+}
+
+
+.imgsection {
+    width: 50%;
+    overflow: hidden;
 }
 
 .imgsection img{
-    /* height: 100%; */
+    height: 100%;
+    width: 100%;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.textsection{
     width: 50%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Name{
+    letter-spacing: 4px;
+}
+
+.title{
+    letter-spacing: 2px;
+    
+}
+
+.para{
+    text-align: justify;
+}
+
+.oldprice{
+    text-decoration: line-through;
+    font-size: 14px;
+    padding-left: 20px ;
+    
+}
+
+.button{
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.button img{
+    margin-right: 20px;
 }

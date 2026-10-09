@@ -18,11 +18,11 @@ body{
 }
 
 .section{
-    height: 700px;
+    height: 630px;
     width: 350px;
     background-color: hsl(216, 50%, 16%);
     border-radius: 12px;
-    padding: 15px;
+    padding: 25px;
 }
 
 .img{
@@ -31,7 +31,7 @@ body{
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 24px; */
-background-color: aqua;
+/* background-color: aqua; */
     width: 100%;
 border-radius: 10px;
 overflow: hidden;
@@ -50,16 +50,69 @@ margin-bottom: 24px;
     color: white;
     display: flex;
     flex-direction: column;
+    gap: 25px;
 
+}
+
+.firstpara{
+    color: rgb(163, 163, 163);
+    padding-bottom: 10px;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    padding-bottom: 10px;
+    
+}
+
+hr {
+    border: none;               
+    height: 1px;                
+    background-color: rgb(194, 194, 194);  
+    /* margin: 16px 0;            */
+}
+
+.icon span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.second{
+    color: rgb(143, 143, 143);
+
+}
+
+.img1{
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.img1 img{
+    width: 100%;
 }
 
 .profile{
-    width: 50px ;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.profile p {
+    color: rgb(126, 126, 126);
 
 }
 
-.profile img{
-    width: 100%;
+.profile p span{
+    color: white;
 }
 
 

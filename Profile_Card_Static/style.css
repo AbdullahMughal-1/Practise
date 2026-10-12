@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    background-color: #19A1AD;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+}
+
+.img1 {
+    width: 900px;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+}
+
+.img2 {
+    width: 900px;
+    position: absolute;
+    bottom: -200px;
+    right: -200px;
+}
+
+.card {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    width: 350px;
+    height: 340px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-br: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.upper {
+    width: 100%;
+    height: 140px;
+}
+
+.upper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img {
+    position: absolute;
+    top: 95px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img img {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 96px;
+    height: 96px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.name h2 {
+    font-size: 18px;
+    color: #2D3248;
+}
+
+.name h3 {
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.middle p {
+    color: gray;
+    font-size: 14px;
+}
+
+.lower {
+    margin-top: 25px;
+}
+
+.lower hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.clients h2 {
+    font-size: 18px;
+    color: #2D3248;
+}
+
+.clients p {
+    font-size: 10px;
+    color: gray;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}

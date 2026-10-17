@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+body{
+    background-color: #464B71;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden ;
+    position: relative;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.main img {
+    width: 100%;
+    height: 100%;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.section1{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.section1 h1{
+    font-size: 70px;
+    width: 70%;
+
+}
+
+.section1 p{
+    width: 70%;
+    font-size: 18px;
+    text-align: start;
+    color: white;
+}
+
+.section2{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    background-color: rgb(19, 20, 87);
+    padding: 15px;
+    width: 450px;
+    text-align: center;
+    border-radius: 9px;
+    margin-bottom: 15px;
+    
+}
+
+.box{
+    background-color: white;
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 9px;
+}
+
+.one, .two, .three, .four, .button{
+    width: 100%;
+
+}
+
+.one , .two , .three , .four , p{
+    font-size: 12px;
+    text-align: end;
+    color: rgb(230, 43, 43);
+}
+
+
+
+.button button{
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.button button:hover{
+background-color:  hsl(154, 59%, 71%) ;
+}
+
+.button p{
+    text-align:center ;
+    font-size: 12px;
+    color: gray;
+    margin-top: 9px;
+}
+
+.button p span{
+    color: rgb(230, 43, 43);
+    font-weight:800 ;
+    
+}
+
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black ;
+    color: black;
+    
+}
+
+input:focus{
+    border: 3px solid green;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+@media (max-width:750px) {
+    .section{
+        flex-direction: column;
+      
+    }
+
+    .section1{
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        text-align: center;
+
+    }
+
+    .section1 h1{
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .section1  p{
+        width: 100%;
+    }
+
+    .section2{
+        height: auto;
+        width: 100%;
+    }
+
+    .first{
+        width: 300px;
+
+    }
+
+    .box{
+        width: 300px;
+
+    }
+}

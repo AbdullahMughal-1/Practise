@@ -1,0 +1,375 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 16px;
+}
+
+.main {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto);
+    gap: 24px;
+}
+
+/* Card 1: Create and schedule */
+.one {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background: #faeee2;
+    padding: 28px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.one h2 {
+    font-size: 28px;
+    line-height: 0.95;
+    letter-spacing: -1.5px;
+}
+
+.one h2 span {
+    display: block;
+    color: #7650d9;
+    font-style: italic;
+}
+
+.one img {
+    width: 100%;
+}
+
+
+.two {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    background: #7650d9;
+    color: white;
+    padding: 36px 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.two h1 {
+    font-size: clamp(28px, 3.5vw, 48px);
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.two h1 span {
+    color: #ffcc69;
+}
+
+.two h1 em {
+    font-weight: 400;
+}
+
+.two img {
+    width: 180px;
+    max-width: 80%;
+}
+
+.two p {
+    font-size: 15px;
+}
+
+
+.three {
+    grid-column: 4;
+    grid-row: 1 / 3;
+    background: #ddd0fa;
+    padding: 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.three h2 {
+    font-size: 25px;
+    line-height: 0.95;
+    letter-spacing: -1px;
+}
+
+.three img {
+    width: 155%;
+    max-width: none;
+    align-self: flex-start;
+}
+
+.three p {
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+
+.four {
+    grid-column: 1;
+    grid-row: 3 / 4;
+    background: #ffcc69;
+    padding: 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.four h2 {
+    font-size: 28px;
+    line-height: 0.95;
+    letter-spacing: -1.2px;
+}
+
+.four img {
+    width: 100%;
+}
+
+/* Card 5: Multiple platforms */
+.five {
+    grid-column: 2;
+    grid-row: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.five img {
+    width: 150%;
+    max-width: none;
+}
+
+.five h2 {
+    font-size: 24px;
+    line-height: 0.95;
+    letter-spacing: -1px;
+}
+
+/* Card 6: Consistent schedule */
+.six {
+    grid-column: 3;
+    grid-row: 2;
+    background: #ffcc69;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.six h2 {
+    font-size: 24px;
+    line-height: 0.95;
+    letter-spacing: -1px;
+}
+
+.six img {
+    width: 100%;
+}
+
+/* Card 7: Audience growth */
+.seven {
+    grid-column: 2;
+    grid-row: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.seven h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+}
+
+.seven p {
+    font-size: 14px;
+}
+
+.seven img {
+    width: 100%;
+}
+
+/* Card 8: Grow followers */
+.eight {
+    grid-column: 3 / 5;
+    grid-row: 3;
+    background: #7650d9;
+    color: white;
+    padding: 24px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    overflow: hidden;
+}
+
+.eight img {
+    width: 45%;
+}
+
+.eight h2 {
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    .main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 16px;
+    }
+
+    .one {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .three {
+        grid-column: 2;
+        grid-row: 2 / 4;
+    }
+
+    .four {
+        grid-column: 1;
+        grid-row: 3 / 5;
+    }
+
+    .five {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .six {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .seven {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    .eight {
+        grid-column: 1 / 3;
+        grid-row: 6;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven,
+    .eight {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .one {
+        order: 6;
+    }
+
+    .two {
+        order: 1;
+        padding: 40px 20px;
+    }
+
+    .two h1 {
+        font-size: 40px;
+    }
+
+    .three {
+        order: 4;
+    }
+
+    .three img {
+        width: 100%;
+    }
+
+    .four {
+        order: 7;
+    }
+
+    .five {
+        order: 2;
+    }
+
+    .five img {
+        width: 100%;
+    }
+
+    .six {
+        order: 3;
+    }
+
+    .seven {
+        order: 8;
+    }
+
+    .eight {
+        order: 5;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .eight img {
+        width: 75%;
+    }
+
+    .eight h2 {
+        font-size: 30px;
+    }
+}

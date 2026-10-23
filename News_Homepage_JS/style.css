@@ -1,0 +1,341 @@
+
+/* EXISTING: Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* CHANGED: Avoid 100vw because it can cause horizontal overflow */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif; /* ADDED */
+}
+
+.main {
+    /* CHANGED: Use a responsive maximum width instead of 80% */
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px; /* ADDED: Space between nav and grid */
+}
+
+nav h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+nav .links {
+    /* CHANGED: Let links size naturally */
+    display: flex;
+    justify-content: space-between;
+    gap: 25px; /* ADDED */
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+}
+
+.links a:hover {
+    color: orange;
+}
+
+/* MAIN GRID */
+.section {
+    width: 100%;
+
+    /* CHANGED: Three equal columns that can shrink without overflowing */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    /* CHANGED: Let content determine row heights */
+    grid-template-rows: auto auto auto;
+
+    gap: 25px; /* CHANGED: More breathing room */
+}
+
+/* HERO IMAGE */
+.one {
+    min-width: 0; /* ADDED: Prevent grid item overflow */
+    grid-column: span 2;
+}
+
+.one img {
+    width: 100%;
+    height: 100%;
+    /* CHANGED: Cover the image area without distortion */
+    object-fit: cover;
+    display: block;
+    /* ADDED: Keep the image from becoming excessively tall */
+    max-height: 300px;
+}
+
+/* NEWS SIDEBAR */
+.two {
+    min-width: 0; /* ADDED */
+    background-color: black;
+    color: white;
+    padding: 25px;
+
+    /* CHANGED: Span the first two grid rows */
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.two h1 {
+    color: orange;
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+
+.two h3 {
+    margin-bottom: 10px; /* ADDED */
+}
+
+.two p {
+    color: rgb(180, 179, 179);
+    line-height: 1.6; /* CHANGED: Easier to read */
+    margin: 15px 0 20px;
+}
+
+.two hr {
+    margin: 20px 0;
+    border: 0; /* ADDED */
+    border-top: 1px solid rgb(100, 100, 100); /* ADDED */
+}
+
+/* MAIN HEADLINE */
+.three {
+    min-width: 0; /* ADDED */
+    grid-column: 1;
+}
+
+.three h1 {
+    /* CHANGED: Scale headline with available screen space */
+    font-size: clamp(36px, 4.5vw, 56px);
+    font-weight: 900;
+    line-height: 1.05; /* ADDED */
+}
+
+/* MAIN ARTICLE DESCRIPTION */
+.four {
+    min-width: 0; /* ADDED */
+    grid-column: 2;
+    display: flex; /* ADDED */
+    flex-direction: column; /* ADDED */
+    align-items: flex-start; /* ADDED */
+    justify-content: space-between; /* ADDED */
+}
+
+.four p {
+    line-height: 1.7; /* CHANGED: Responsive line height */
+    color: rgb(73, 73, 73);
+    font-weight: 600;
+}
+
+.four button {
+    /* CHANGED: Fixed padding instead of percentage width */
+    padding: 14px 25px;
+    border: none;
+    background-color: orangered;
+    color: white; /* ADDED */
+    font-size: 14px; /* CHANGED */
+    font-weight: 700;
+    letter-spacing: 3px; /* ADDED */
+    margin-top: 20px;
+    cursor: pointer; /* ADDED */
+}
+
+.four button:hover {
+    background-color: black; /* ADDED */
+}
+
+/* BOTTOM ARTICLE CARDS */
+.five,
+.six,
+.seven {
+    min-width: 0; /* ADDED: Prevent long text from stretching columns */
+    display: flex;
+    align-items: flex-start;
+    gap: 15px; /* ADDED */
+    margin-top: 10px; /* ADDED */
+}
+
+/* ADDED: Keep each card image a consistent size */
+.five img,
+.six img,
+.seven img {
+    width: 100px;
+    height: 125px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.text {
+    min-width: 0; /* ADDED */
+}
+
+.text h1 {
+    color: orangered;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    color: rgb(73, 73, 73);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* ADDED: Place bottom cards across the full grid width */
+.five {
+    grid-column: 1;
+}
+
+.six {
+    grid-column: 2;
+}
+
+.seven {
+    grid-column: 3;
+}
+
+/* ADDED: TABLET LAYOUT */
+@media (max-width: 900px) {
+    body {
+        padding: 25px;
+    }
+
+    nav .links {
+        gap: 15px;
+    }
+
+    .section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* CHANGED: Sidebar moves into the second column */
+    .two {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .one {
+        grid-column: 1;
+    }
+
+    .three {
+        grid-column: 1;
+    }
+
+    .four {
+        grid-column: 1;
+    }
+
+    .five,
+    .six,
+    .seven {
+        grid-column: auto;
+    }
+
+    /* ADDED: Bottom cards occupy the full width in a single column each */
+    .five,
+    .six,
+    .seven {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+
+    .five img,
+    .six img,
+    .seven img {
+        width: 100%;
+        height: 140px;
+    }
+}
+
+/* ADDED: MOBILE LAYOUT */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    nav {
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column; /* ADDED */
+    }
+
+    nav .links {
+        width: 100%;
+        flex-wrap: wrap; /* ADDED */
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .section {
+        /* CHANGED: Stack all articles in one column */
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    /* ADDED: Reset desktop grid placements */
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .one img {
+        height: auto; /* CHANGED: Preserve image proportions on mobile */
+        max-height: none;
+        object-fit: contain;
+    }
+
+    .two {
+        height: auto; /* CHANGED: Let sidebar content determine its height */
+    }
+
+    .three h1 {
+        font-size: 42px;
+    }
+
+    .four {
+        justify-content: flex-start;
+    }
+
+    /* CHANGED: Keep bottom cards horizontal on mobile */
+    .five,
+    .six,
+    .seven {
+        flex-direction: row;
+    }
+
+    .five img,
+    .six img,
+    .seven img {
+        width: 100px;
+        height: 125px;
+    }
+}

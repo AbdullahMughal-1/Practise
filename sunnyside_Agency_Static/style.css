@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.firstsection{
+    height: 99vh;
+    width: 100vw;
+    position: relative;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.nav .logo h1{
+    color: white;
+    font-size: 25px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 18px;
+}
+
+.buttons a:hover{
+    background-color: rgba(255, 255, 255, 0.288);
+    border-radius: 50px;
+}
+
+.text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 270px;
+    width: 100%;
+    gap: 80px;
+    top: 0;
+}
+
+.text h1{
+    color: white;
+    letter-spacing: 5px;
+}
+
+
+/* Second section */
+
+.secondsection{
+    height: 100%;
+}
+
+
+.one, .two, .three{
+    display: flex;
+    width: 100%;
+}
+
+.firstone{
+    width: 50%;
+    padding: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+.firstone h1{
+    font-size: 45px;
+    font-weight: 900;
+
+}
+
+.firstone p{
+    color: rgb(77 77 77);
+    font-size: 20px;
+}
+
+.firstone a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.firstone a:hover{
+    text-decoration: underline 8px yellow ;
+    
+}
+
+.firsttwo{
+    width: 50%;
+}
+.firsttwo img{
+    width: 100%;
+}
+
+.secondone{
+ width: 50%;
+}
+
+.secondone img{
+ width: 100%;
+}
+
+
+.secondtwo{
+ width: 50%;
+ padding: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+
+.secondtwo h1{
+    font-size: 45px;
+    font-weight: 900;
+
+}
+
+.secondtwo p{
+    color: rgb(77 77 77);
+    font-size: 20px;
+}
+
+.secondtwo a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.secondtwo a:hover{
+    text-decoration: underline 8px #FF8071 ;
+    
+}
+
+.thirdone{
+ width: 50%;
+}
+
+.thirdone img{
+ width: 100%;
+}
+
+.thirdtwo{
+ width: 50%;
+}
+
+.thirdtwo img{
+ width: 100%;
+}

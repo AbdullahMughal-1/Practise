@@ -90,23 +90,24 @@ body{
 
 .firstone{
     width: 50%;
-    padding: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 30px;
 }
 
 .firstone h1{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 900;
+    width: 60%;
 
 }
 
 .firstone p{
     color: rgb(77 77 77);
     font-size: 20px;
+    width: 60%;
 }
 
 .firstone a{
@@ -139,24 +140,25 @@ body{
 
 .secondtwo{
  width: 50%;
- padding: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 30px;
 }
 
 
 .secondtwo h1{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 900;
+    width: 60%;
 
 }
 
 .secondtwo p{
     color: rgb(77 77 77);
     font-size: 20px;
+        width: 60%;
 }
 
 .secondtwo a{
@@ -185,4 +187,161 @@ body{
 
 .thirdtwo img{
  width: 100%;
+}
+
+.thirdsection{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 150px;
+}
+.thirdsection h1{
+    color: rgb(77 77 77);
+    letter-spacing: 6px;
+    font-weight: 700;
+}
+
+.clients{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tesone , .testwo , .testhree{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.img{
+    width: 45px;
+}
+
+.img img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.para{
+    width: 70%;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(77 77 77);
+}
+
+.name h2{
+    margin-bottom: 10px;
+}
+
+.foursection{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    overflow: hidden;
+}
+
+.foursection img{
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.fivesection{
+    background-color: #90D4C5 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    gap: 30px;
+}
+
+.bottom{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.bottom a{
+    text-decoration: none;
+    color: rgb(77 77 77);
+}
+
+.social{
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width:950px) {
+
+    .text h1{
+        text-align: center;
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    .one, .two, .three{
+        flex-direction: column;
+}
+
+.firstone{
+    width: 100%;
+}
+
+.firsttwo{
+    width: 100%;
+}
+
+.secondone{
+    width: 100%;
+}
+
+.secondtwo{
+    width: 100%;
+}
+
+.thirdone{
+    width: 100%;
+}
+
+.thirdtwo{
+    width: 100%;
+}
+
+.thirdsection{
+    padding: 0;
+}
+
+.thirdsection h1{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.clients{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tesone{
+    width: 100%;
+}
+
+.foursection{
+    padding-top: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+
 }

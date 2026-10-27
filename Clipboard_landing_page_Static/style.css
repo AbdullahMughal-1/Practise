@@ -134,3 +134,211 @@
     width: 100%;
     text-align: center;
 }
+
+.secondtwo{
+    width: 500px;
+}
+
+.secondtwo img{
+    width: 100%;
+}
+
+
+.foursection{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.threesection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+
+.secone, .sectwo, .secthree{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.threesection h2{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.threesection p{
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    color: rgb(78 78 78 );
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 13px;
+    line-height: 27px;
+}
+
+
+
+.logos{
+    display: flex;
+    padding: 120px 0px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sixsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 120px;
+}
+
+.sixsection h1{
+    font-weight: 500;
+}
+
+.sixsection p{
+    max-width: 600px;
+    color: rgb(78 78 78 );
+    text-align: center;
+}
+
+
+.botombuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.botombuttons button{
+    padding: 8px 20px ;
+    border-radius: 50px;
+    border: none; 
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(78, 78, 78, 0.158);
+    height: 100px;
+}
+
+.logo{
+    width: 70px;
+
+}
+
+.bottoms1{
+    display: grid;
+    grid-template-rows: repeat(2,0fr);
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.bottoms1 a{
+    text-decoration: none;
+    color: rgb(78 78 78 );
+    font-weight: 600;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer a:hover{
+    color: #5CCDBB;
+}
+
+@media (max-width:600px) {
+   .secondsection{
+    grid-template-columns: 1fr;
+    gap: 30px;
+   }
+
+   .secondtwo{
+    width: 300px;
+   }
+
+   .threesection{
+    grid-template-columns: 1fr;
+   }
+
+   .logos{
+    flex-direction: column;
+    gap: 70px;
+   }
+
+   .footer{
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    height: auto;
+   }
+
+   .logo{
+    width: 50px;
+   }
+
+   .bottoms1{
+    grid-template-rows: 1fr;
+    grid-template-columns: 0fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+   }
+
+   .main h1{
+    text-align: center;
+   }   
+
+
+   .Downlodsupper{
+    flex-direction: column;
+   }
+  
+   .Downlodsupper button{
+    padding: 15px 35px;
+   }
+
+.two h2,p{
+    text-align: center;
+}
+
+.foursection h1{
+    text-align: center;
+}
+
+.botombuttons{
+    flex-direction: column;
+}
+
+.botombuttons button{
+     padding: 15px 35px;
+}
+
+.firstsection, .secondsection , .thirdsection,
+.foursection ,.logos ,.sixsection , .footer {
+padding: 30px;
+}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <h1>Contact Us</h1>
+
+            <div class="names">
+                <div class="first">
+                    <h4>First Name  *</h4>
+                    <input type="text">
+                    <p class="error">This field is required</p>
+                </div>
+                <div class="last">
+                    <h4>Last Name *</h4>
+                    <input type="text">
+                    <p class="error">This field is required</p>
+                </div>
+            </div>
+
+            <div class="email">
+                <h4>Email Address *</h4>
+                <input type="text">
+                <p class="error">Please Enter a vaild email address</p>
+            </div>
+
+            <div class="query">
+                <h4>Query Type *</h4>
+                <div class="option">
+                    <label class="one">
+                        <input type="radio" name="queryType" >
+                        <span>General Enquiry</span>
+                    </label>
+
+                    <label class="two">
+                        <input type="radio" name="queryType">
+                        <span>Support Request</span>
+                    </label>
+                </div>
+                <p class="error">Please select a query type</p>
+            </div>
+
+            <div class="message">
+                <h4>Message *</h4>
+                <textarea>
+
+                </textarea>
+                <p class="error">This field is required</p>
+            </div>
+
+            <div class="terms">
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <p>I consent to being contacted by the team *</p>
+                </div>
+                <p class="error">To submit this form, please consent to being contacted</p>
+            </div>
+
+            <button>Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

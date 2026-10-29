@@ -186,7 +186,8 @@ nav .navbutton{
 .onefour, .twofour, .threefour{
     background-color: #21293C;
     /* max-width: 450px; */
-    width: 450px;
+    min-width: 450px;
+    width: auto;
     height: auto;
     padding: 30px;
     display: flex;
@@ -273,8 +274,9 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 400px;
+    max-height: auto;
     padding-top: 150px;
+    min-height: 400px;
 }
 
 .footerone{
@@ -334,7 +336,6 @@ footer{
 
 
 
-
 .footerfour img{
     width: 100%;
     height: 100%;
@@ -343,6 +344,76 @@ footer{
 
 @media (max-width:700px) {
 
-  
+  .sectiontwo{
+    grid-template-columns: 1fr;
+  }
+
+  nav .navbutton{
+    display: none;
+  }
+
+  .sectionthree{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .stay{
+    width: 300px;
+  }
+
+
+  .threetext{
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .threetext h1, p{
+    text-align: center;
+  }
+
+  .sectionfour{
+    flex-direction: column;
+  }
+
+  .onefour, .twofour, .threefour{
+    min-width: 200px;
+    width: auto;
+  }
+
+  .sectionfive{
+    padding: 0px 50px;
+  }
+
+  .box{
+    min-width: 350px;
+    width: auto;
+    /* display: none; */
+  }
+
+  .form{
+    width: 80%;
+  }
+
+  .form input{
+    width: auto;
+  }
+
+
+  .form{
+    flex-direction: column;
+  }
+
+
+  footer{
+    flex-direction: column;
+    padding-top: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  nav , .sectionone, .sectiontwo, .sectionthree, .sectionfour, .sectionfive, footer{
+    padding: 20px 20px;
+  }
     
 }

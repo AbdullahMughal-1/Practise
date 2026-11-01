@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.firstsection{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.backgroundfirst{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.backgroundfirst img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.textsection{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.navbuttons{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbuttons a {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    transition: font-size 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.navbuttons a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbuttons a:hover {
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+}
+
+.navbuttons a:hover::after {
+    width: 100%;
+}
+
+.herotext{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.herotext h1{
+    font-size: 100px;
+    font-weight: 300;
+    border: 4px solid ;
+    padding: 20px;
+    width: fit-content;
+}
+
+.secondsection{
+    display: flex;
+    padding: 100px 100px;
+    margin-bottom: 30px;
+}
+
+.secondimg, .texttwo{
+    flex: 1;
+    min-width: 0;
+}
+
+
+
+.secondimg img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
+
+.texttwo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.under h1{
+    font-size: 50px;
+    max-width: 650px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.texttwo p{
+    max-width: 600px;
+    width: 100%;
+}
+
+.under{
+    padding: 40px;
+    height: 400px;
+    background-color: white;
+    transform: translate(-220px, 80px);
+}
+
+.thirdsection{
+    padding: 0px 100px;
+    margin-bottom: 100px;
+}
+
+.anothernav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.anothernav h1{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+
+.anothernav button{
+    background-color: transparent;
+    border: 2px solid;
+    padding: 10px 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.one ,.two, .three, .four, .five, .six, .seven, .eight{
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+
+.cards img:hover{
+    opacity: 0.5;
+}
+
+
+
+.hidden{
+    position: absolute;
+    bottom: 0px;
+    /* left: 70px; */
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+.hidden h1{
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+.cards img{
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 9px;
+    transition: opacity 0.3s ease;
+}
+
+.foursection{
+    background-color: black;
+    color: white;
+}
+
+
+.foursection{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    align-items: center;
+}
+
+.footerbuttons{
+    padding-top: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerbuttons a{
+    color: white;
+    text-decoration: none;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.second p{
+    color: gray;
+    padding-top: 20px;
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

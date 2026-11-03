@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Fraunces", "Libre Caslon Condensed", serif;
+    background-color: #FBF6F0;
+}
+
+
+.section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    flex: 0 0 15%;
+    border-right: 2px solid rgba(0, 0, 0, 0.2) ; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.sidebarlogo{
+    padding-bottom: 5px;
+}
+
+.sidebarlogo hr{
+    margin: 15px 0px;
+    opacity: 0.3;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.house, .town, .breakfast , .message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0px 8px;
+}
+
+
+
+.select{
+    width: 20px;
+    height: 20px;
+    background-color: #B83C19;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        opacity: 0.80;
+}
+
+.stay{
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+    gap: 10px;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    padding: 0px 8px;
+}
+
+.under{
+    display: flex;
+    gap: 10px;
+}
+
+
+.house:hover , .town:hover, .breakfast:hover , .message:hover{
+    background-color: white;
+}
+
+.house:active , .town:active,  .breakfast:active, .message:active {
+    border: 3px solid #B83C19;
+}
+
+
+.sidebarcard{
+    background-color: #F4D98A;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.sidebarcard p{
+    color: rgb(78 78 78);
+    z-index: 5;
+    font-size: 13px;
+}
+
+.sidebar .circle{
+    position: absolute;
+    right: -15px;
+    top: -25px;
+
+}
+
+.sidebarbottom hr{
+    margin: 25px 0px;
+    opacity: 0.3;
+}
+
+
+.sidebartext p{
+    padding-bottom: 8px;
+    color: rgb(146, 146, 146);
+    font-size: 15px;
+}
+
+
+.main{
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color: #2C2721; */
+}
+
+.mainlogosection p{
+    color: rgb(146, 146, 146);
+}
+
+.mainlogosection h1{
+    font-weight: 500;
+}
+
+.orange{
+    color: #B83C19;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.navbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbuttons button{
+    border: 1px solid rgb(0, 0, 0 , 0.2);
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.print{
+    background-color: transparent;
+        padding: 5px 15px;
+}
+
+.addto{
+    background-color: black;
+    color: rgb(221, 220, 220);
+    padding: 5px 20px;
+}
+
+.hero{
+    display: flex;
+    /* padding-top: 80px; */
+}
+
+.heroone{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: end;
+    transform: rotate(-3deg) translateY(6px);
+    z-index: 1;
+}
+
+.herotwo{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: start;
+    transform: rotate(3deg) translateY(6px);
+    z-index: 2;
+}
+
+.inside1 , .inside2{
+    width: 540px;
+    height: auto;
+    border-radius: 30px;
+    -webkit-box-shadow: -4px 11px 35px -16px #000000; 
+    box-shadow: -4px 11px 35px -16px #000000;
+
+}
+
+.inside1{
+    padding: 20px;
+    /* background-color: #FBFAF6 ; */
+    background-color: white;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.top p{
+    color: rgb(146, 146, 146);
+}
+
+.top p span{
+    color: black;
+}
+
+.bigger{
+    font-size: 30px;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+.one p{
+    color: rgb(92, 92, 92);
+}
+
+.one h1{
+    font-weight: 400;
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+.chek{
+    padding-bottom: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.two p{
+    color: rgb(92, 92, 92);
+
+}
+
+.two h1{
+    font-weight: 400;
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+.center{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.centerone , .centertwo, .centerthree{
+    display: flex;
+    justify-content: space-between;
+}
+
+.centerone p , .centertwo p , .centerthree p{
+    font-weight: 400;
+}
+
+.bottom{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottomone p{
+    color: rgb(146, 146, 146);
+}
+
+.total{
+    letter-spacing: 3px;
+}
+
+.paid{
+    font-size: 12px;
+}
+
+.bottomtwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomtwo h1{
+    font-weight: 400;
+}
+
+.bottomtwo img{
+    padding-top: 20px;
+}
+
+.inside2{
+    background: linear-gradient( hsl(22, 72%, 56%) , #A4421F);
+    padding: 20px;
+    color: rgb(231, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.herotwoone{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.inside2 hr {
+    border: none;
+    border-top: 2px dashed rgba(255, 255, 255, 0.6);
+}
+
+
+.herotwomiddle h2{
+    font-weight: 400;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+
+.herotwomiddle h1{
+    font-style: italic;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.herotwomiddle p{
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 30px;
+}
+
+.herotwobottom h2{
+    font-weight: 400;
+}
+
+.herobottom{
+    display: flex;
+    gap: 30px;
+}
+
+.card1 , .card2 , .card3{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+
+}
+
+.card1top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

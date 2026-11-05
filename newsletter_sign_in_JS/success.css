@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #36384D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+.main{
+    background-color: white;
+    padding: 60px 40px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.middle h1{
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+
+.middle p{
+    max-width: 350px;
+    width: 100%;
+    font-size: 18px;
+    color: rgb(78 78 78 );
+    line-height: 25px;
+}
+
+.email{
+    color: black;
+    font-weight: 600;
+}
+
+.bottom{
+    width: 100%;
+}
+
+.bottom button{
+    width: 100%;
+    padding: 17px 0px;
+    border: none;
+    background-color: hsl(4, 100%, 67%);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}

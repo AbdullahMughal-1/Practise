@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+
+}
+
+
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #36384D;
+
+}
+
+.box{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+
+.mobile{
+    display: none;
+}
+
+
+.firstsection , .secondsection{
+    flex: 1;
+    min-width: 0;
+}
+
+
+.firstsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+    gap: 25px;
+}
+
+
+
+.firstsection h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.join{
+    max-width: 350px;
+    width: 100%;
+}
+
+.one, .two, .three{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 13px;
+}
+
+
+.one img, .two img , .three img{
+    width: 18px ;
+    height: 18px;
+}
+
+.input{
+    width: 100%;
+}
+
+.input input{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px ;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.input h4{
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.button button{
+    width: 100%;
+    background-color: #232742;
+    color: white;
+    font-weight: 600;
+    padding: 15px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.secondsection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inside{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error{
+    color: red;
+}
+
+@media (max-width:870px) {
+    
+    .box{
+        flex-direction: column-reverse;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+
+    .secondsection img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}

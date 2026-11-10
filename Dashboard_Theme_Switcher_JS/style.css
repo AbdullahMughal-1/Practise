@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.background{
+    background-color: #F8F9FE;
+    height: 16rem;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    pointer-events: none;
+}
+
+nav{
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.first-section{
+    position: absolute;
+    z-index: 1;
+    top: 13%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 80%;
+}
+
+
+.one , .two, .three, .four{
+    background-color: #F0F3FA;
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topbar1{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    top: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.middle1 h1{
+    font-size: 3vw;
+}
+
+.middle1 p{
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.bottom1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.bottom1 h4{
+    color: #1EB589;
+}
+
+.bottom{
+    width: 80%;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+}
+
+.bottom h1{
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.bottomcards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px 25px;
+}
+
+.bone{
+    min-height: 160px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F0F3FA;
+}
+
+.btop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bdownp{
+    display: flex;
+    align-items: center;
+    color: #1EB589;
+}
+
+.toggle {
+    width: 50px;
+    height: 26px;
+    border: none;
+    border-radius: 50px;
+    background-color: #AEB3CB;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.toggle span {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: 0.3s ease;
+}
+
+/* When toggle is active */
+.toggle.active {
+    background-color: #378FE6;
+}
+
+.toggle.active span {
+    transform: translateX(24px);
+}

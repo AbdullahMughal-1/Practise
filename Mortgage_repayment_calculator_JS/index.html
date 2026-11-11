@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form>
+        <main>
+            <div class="first">
+
+              <div class="firsttop">
+                <h2>Mortgage Calculator</h2>
+                <a href="#">Clear All</a>
+              </div>  
+
+              <div class="firstmiddle">
+
+                <div class="biginput">
+                    <h4>Mortgage Amount</h4>
+                    <div class="input">
+                        <span class="big">&pound;
+                        </span>
+                        <input id="amount"  type="number">
+                    </div>
+                    <h4 >This field is required</h4>
+                </div>
+
+                <div class="twosmallinput">
+
+                    <div class="firstinput">
+                        <h4>Mortgage Term</h4>
+                        <div class="firstsmall">
+                            <input id="year" type="number">
+                            <span class="years">
+                                years
+                            </span>
+                        </div>
+                        <h4>This field is required</h4>
+                    </div>
+
+                    <div class="secondinput">
+                        <h4>Interest Rate</h4>
+                        <div class="secondsmall">
+                            <input id="rate" type="text" step="any">
+                            <span class="perct">
+                                %
+                            </span>
+                        </div>
+                            <h4>This field is required</h4>
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="secondmiddle">
+                <h4>Mortgage Type</h4>
+                <div class="re1">
+                    <label class="rapayment">
+                        <input type="radio" name="option" value="repayment">
+                        <span>Repayment</span>
+                    </label>
+                </div>
+                <div class="re2">
+                    <label class="interestOnly">
+                        <input type="radio" name="option" value="interest">
+                        <span>Interest</span>
+                    </label>
+                </div>
+                <h4">This field is required</h4>
+              </div>
+
+              <div class="bottom">
+                <button><img src="media/icon-calculator.svg" alt=""> Calculate Repayments</button>
+              </div>
+            </div>
+        </form>
+            
+            <div class="second">
+                <img src="media/illustration-empty.svg" alt="">
+                <div class="text">
+                    <h2>Results shown here</h2>
+                    <p>Complete the form and click "calculate repayments" to 
+                        see what your monthly repayments would be.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

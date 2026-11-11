@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* font-family: 'Plus Jakarta Sans' serif; */
+    background-color: #E3F4FC;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    background-color: white;
+}
+
+.first{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.firsttop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input{
+    display: inline-flex;
+    width: 100%;
+    border: 2px solid #133040;
+    border-radius: 5px;
+}
+
+.input input{
+    width: 100%;
+    border: none;
+}
+
+.input input:focus{
+    outline: none;
+}
+
+.big{
+    background-color: lightblue;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.twosmallinput{
+    display: flex;
+    gap: 20px;
+}
+
+.firstinput{
+    flex: 1 ;
+}
+
+.secondinput{
+    flex: 1;
+}
+
+
+.firstsmall{
+    display: inline-flex;
+    border: 2px solid #133040;
+    border-radius: 5px;
+}
+
+.firstsmall input{
+    border: none;
+}
+
+.firstsmall input:focus{
+    outline: none;
+}
+
+.years{
+    background-color: lightblue;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.secondsmall{
+    display: inline-flex;
+    border: 2px solid #133040;
+    border-radius: 5px;
+}
+
+.secondsmall input{
+    border: none;
+}
+
+.secondsmall input:focus{
+    outline: none;
+}
+
+input{
+    padding: 0px 5px;
+}
+
+.perct{
+     background-color: lightblue;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.re1, .re2{
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.re1{
+    margin-bottom: 10px;
+}
+
+.bottom{
+    margin-top: 10px;
+}
+
+.bottom button{
+    background-color: yellow;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.red{
+    color: red;
+    display: none;
+}
+
+.second{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #133040;
+    color: white;
+}
+
+.second h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.second p {
+    max-width: 23rem;
+    width: 100%;
+    text-align: center;
+}
